@@ -13,7 +13,10 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('AppBundle::homepage.html.twig');
-    }
+        $em = $this->getDoctrine()->getManager();
 
+        $news = $em->getRepository('AppBundle:News')->getLastNews();
+
+        return $this->render('AppBundle::homepage.html.twig', array('news' => $news));
+    }
 }

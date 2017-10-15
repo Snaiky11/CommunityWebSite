@@ -13,8 +13,10 @@
         <script type="text/javascript" src="{{ asset('js/npm.js') }}"></script>
     </head>
     <body>
-        {% include 'header.html.twig' %}
-        {% block content %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div class="container-fluid" id="backpage">
+            {% include 'header.html.twig' %}
+            {% block content %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+        </div>
     </body>
 </html>
