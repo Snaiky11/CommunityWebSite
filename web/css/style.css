@@ -104,3 +104,13 @@ iframe {
 #bouton_inscription {
     margin: 0 0 0 20px;
 }
+
+.liste-footer {
+    list-style: none;
+    text-align: center;
+}
+
+#copyright-container {
+    width: 100%;
+    text-align: center;
+}
